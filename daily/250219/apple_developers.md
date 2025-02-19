@@ -7,6 +7,10 @@
     - 맥북 디바이스 ID 확인 
       - 이 Mac에 관하여 > 추가정보 > 시스템 리포트 > 하드웨어 
 
+- Xcode > Product > Archive 
+  - https://sodevly.github.io/react-native-upload-app-on-testflight/
+  - 이후 본인 개발자 계정 메일로 오는 메일 확인해서 밸드 안되는 부분 수정 하기 
+
 # 참고 링크 
 
 - https://blog.naver.com/appgrowth/223114743790 
