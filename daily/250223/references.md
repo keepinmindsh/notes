@@ -1,0 +1,2 @@
+- [Software engineering at Google](https://abseil.io/resources/swe-book/html/toc.html)
+  - [Tistory 정리](https://gngsn.tistory.com/172) 
