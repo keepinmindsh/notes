@@ -1,2 +1,3 @@
 - [Software engineering at Google](https://abseil.io/resources/swe-book/html/toc.html)
-  - [Tistory 정리](https://gngsn.tistory.com/172) 
+  - [Tistory 정리](https://gngsn.tistory.com/172)
+- [오브젝트 - 좋은 설계란?](https://eunjin3786.tistory.com/324)
