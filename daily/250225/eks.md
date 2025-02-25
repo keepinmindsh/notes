@@ -8,15 +8,15 @@
     - [관리형 쿠버네티스에 대한 툴](#관리형-쿠버네티스에-대한-툴)
 - [EKS 사용가이드](#eks-사용가이드)
     - [EKS 로컬에서 접근하기](#eks-로컬에서-접근하기)
-    - [EKS를 Fargate를 이용해서 테라폼을 활용한 서비스 구성하기](#eks를-fargate를-이용해서-테라폼을-활용한-서비스-구성하기)
+    - [EKS 를 Fargate 를 이용해서 테라폼을 활용한 서비스 구성하기](#eks를-fargate를-이용해서-테라폼을-활용한-서비스-구성하기)
         - [기본 테라폼 모듈](#기본-테라폼-모듈)
         - [EKS Fargate 사용을 위한 추가 설정](#eks-fargate-사용을-위한-추가-설정)
         - [IAM Policy 설정에 대하여](#iam-policy-설정에-대하여)
-        - [Role와 IAMPolicy 바인딩 처리](#role와-iampolicy-바인딩-처리)
+        - [Role 와 IAMPolicy 바인딩 처리](#role와-iampolicy-바인딩-처리)
         - [EKS 에서의 ALB 사용](#eks-에서의-alb-사용)
         - [IAM Policy Json(APPLICATION LOAD BALANCER 샘플)](#iam-policy-jsonapplication-load-balancer-샘플)
         - [EKS 접근이 안되는 경우](#eks-접근이-안되는-경우)
-            - [EKS Access Refreences](#eks-access-refreences)
+            - [EKS Access References](#eks-access-references)
 - [References](#references)
 
 # Elastic Kubernetes 구성
@@ -24,7 +24,7 @@
 - Amazon EKS + EC2
     - EC2 인스턴스에서 Kubernetes 클러스터를 실행할 수 있도록 지원하는 서비스입니다. 사용자는 EC2 인스턴스를 시작하고, Kubernetes 노드를 등록하여 Kubernetes 클러스터를 실행할 수 있습니다.
 - Amazon EKS + Fargate
-    - AWS Fargate에서 Kubernetes 클러스터를 실행할 수 있도록 지원하는 서비스입니다. Fargate는 컨테이너를 실행하는 데 필요한 인프라를 자동으로 관리하므로, 사용자는 Kubernetes 클러스터를 더 쉽게 관리할 수 있습니다.
+    - AWS Fargate에서 Kubernetes 클러스터를 실행할 수 있도록 지원하는 서비스입니다. Fargate 는 컨테이너를 실행하는 데 필요한 인프라를 자동으로 관리하므로, 사용자는 Kubernetes 클러스터를 더 쉽게 관리할 수 있습니다.
 
 ## EKS 설정 사전 체크
 
@@ -36,11 +36,11 @@ aws --version | cut -d / -f2 | cut -d ' ' -f1
 
 ## 사전 설명과 이해해야할 사항
 
-- 서비스 컨테이너와 ECS와 달리 쿠버네티스는 클러스터 내에서 로드 밸런서, 영구 볼륨 등도 정의할 수 있습니다. 이때 정의하는 쿠버네티스안에서 하지만 실제 만들어지는 것은 쿠버네티스와 무관한 AWS 리소스입니다. 쿠버네티스 자체는 AWS 구조와 독립적이고, 태그등 다른 방법을 통해 쿠버네티스 리소스가 위치할 AWS 리소스를 찾게 됩니다.
+- 서비스 컨테이너와 ECS 와 달리 쿠버네티스는 클러스터 내에서 로드 밸런서, 영구 볼륨 등도 정의할 수 있습니다. 이때 정의하는 쿠버네티스안에서 하지만 실제 만들어지는 것은 쿠버네티스와 무관한 AWS 리소스입니다. 쿠버네티스 자체는 AWS 구조와 독립적이고, 태그등 다른 방법을 통해 쿠버네티스 리소스가 위치할 AWS 리소스를 찾게 됩니다.
 
 ## 비용 정책 정의
 
-- [Amazone EC2 온디맨드 요금](https://aws.amazon.com/ko/ec2/pricing/on-demand/)
+- [Amazon EC2 온디맨드 요금](https://aws.amazon.com/ko/ec2/pricing/on-demand/)
 - [AWS Fargate 요금](https://aws.amazon.com/ko/fargate/pricing/)
 
 ## 관리형 쿠버네티스에 대한 툴
@@ -54,8 +54,8 @@ aws --version | cut -d / -f2 | cut -d ' ' -f1
 
 # EKS 사용가이드
 
-- [Amzone Elastic Kubernetes Service 설명서](https://docs.aws.amazon.com/ko_kr/eks/)
-- [EKS를 이용한 Application 서비스 하기](https://devblog.kakaostyle.com/ko/2022-03-31-2-web-application-using-eks/)
+- [Amazon Elastic Kubernetes Service 설명서](https://docs.aws.amazon.com/ko_kr/eks/)
+- [EKS 를 이용한 Application 서비스 하기](https://devblog.kakaostyle.com/ko/2022-03-31-2-web-application-using-eks/)
 - [Terraform 활용하기](https://devblog.kakaostyle.com/ko/2022-03-31-3-build-eks-cluster-with-terraform/)
 
 ## EKS 로컬에서 접근하기
@@ -261,7 +261,7 @@ POLICY
 
 ### EKS Fargate 사용을 위한 추가 설정
 
-Fargate를 사용할 경우 EC2 인스턴스가 아닌 내부에서 모두 자동화 관리되기 때문에 해당 설정이 기존의 K8S의서 Scheduler라 리소스를 할당할 위치를 찾는 추가적인 설정이 필요하다.
+Fargate 를 사용할 경우 EC2 인스턴스가 아닌 내부에서 모두 자동화 관리되기 때문에 해당 설정이 기존의 K8S의서 Scheduler 라 리소스를 할당할 위치를 찾는 추가적인 설정이 필요하다.
 
 - 첫번째 방법
 
@@ -665,7 +665,7 @@ EKS 로 접근이 안되는 경우에는 EKS로 접근할 수 있는 롤을 정�
 
 클러스터 내의 위의 이미지와 같은 설정을 필요로 한다.
 
-#### EKS Access Refreences
+#### EKS Access References
 
 - https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
 - https://docs.aws.amazon.com/eks/latest/userguide/cluster-auth.html
