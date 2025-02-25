@@ -88,8 +88,18 @@ docker push {upload_image_name}:{tag}
 
 ### Application Load Balancer 세팅
 
+#### Listener Port
+
 - http / 80 구성
 - https / 443 구성
+
+#### Security Group 
+
+- Inbound Rule Setting 
+
+### Target Group Setting 
+
+- Setting with ECS 
 
 ### Domain 설정
 
@@ -126,6 +136,16 @@ curl —location 'http://***.***.***commons/banks' \
 
 배포 방식에 따라 조금의 차이가 있을 수 있지만, 일시적으로 2개의 리소스를 유지해야하기 때문에 이로 인하여 Cluster의 메모리가 위와 같이 구성됨.
 
+## Log 확인 
+
+- ECS 내의 로그 확인 
+
+## Docker Build 시 Platform 정의해서 빌드할 것 
+
+```shell 
+docker build --platform=linux/amd64 -f ./deployments/prod/Dockerfile  -t $(NEW_IMAGE) .
+docker build --platform=linux/arm64 -f ./deployments/prod/Dockerfile  -t $(NEW_IMAGE) .
+```
 
 ## 추천 하는 방향
 
