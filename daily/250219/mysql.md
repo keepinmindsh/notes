@@ -1,3 +1,4 @@
+# 권한 부여하기 
 
 - '사용자이름'@'호스트' : 특정 사용자와 호스트를 지정합니다.
    - '사용자이름'@'%' : 모든 IP에서 접근 가능하도록 설정
@@ -13,3 +14,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED BY 'securepassword' WITH G
 FLUSH PRIVILEGES;
 ```
 
+
+# 특정 DB Schema에 대해서 권한 부여하기 
+
+```sql
+GRANT ALL PRIVILEGES ON {db_schema 명}.* TO '{db_user}'@'%'  WITH GRANT OPTION
+```
