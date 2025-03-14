@@ -6,9 +6,13 @@
 ## 작업 절차 
 
 - AWS Lambda 구성전 GitAction 구성하기 
-- AWS Lambda 구성
+  - Lambda에 함수 배포를 위한 Policy 정의 및 Role에 정책 연결 처리하기  
+- AWS Lambda 함수 구성 
+  - AWS API Gateway 자체가 WebSocket 서버로 구성된다. 
+  - API Gateway 호출 시점에 Routing 값에 따라서 람다함수를 호출하여 각 이벤트에 대한 처리 가능 
+  - ConnectionID를 이용해서 각 유저별로 채팅에 대한 Join 및 Disconnect, Connect 등에 대한 프로세스를 작성한다. 
 - AWS API GATEWAY 로 WebSocket 구성하기
-
+  - 기본 Routing $connect, $disconnect, $default 에 대해서 생성한 람다 함수 연
 
 ## 중요 개념
 
