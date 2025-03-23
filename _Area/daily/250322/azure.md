@@ -20,3 +20,14 @@ Serving이란 머신러닝 모델을 실제 운영 환경(production)에서 사�
   - 소버린 AI의 핵심 구성 요소 데이터 센터, 고성능 컴퓨팅(HPC) 클러스터, GPU(Graphics Processing Units), TPU(Tensor Processing Units) 같은 특수 하드웨어.
 - 소버린 AI의 활용
   - 네이버는 소버린 AI를 중심으로 한 글로벌 미래 사업 전략을 구상 중이며, AI 칩 선두 주자 엔비디아와 손을 맞잡았습니다.
+
+
+# 참고해야할 References 
+
+- https://learn.microsoft.com/ko-kr/industry/sovereignty/architecture/aiwithllm/overview-ai-llm-configuration 
+- https://blogs.microsoft.com/on-the-issues/2024/03/28/data-protection-responsible-ai-azure-copilot/
+  - https://www.microsoft.com/en-US/privacy/privacystatement
+  - https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA
+  - https://www.microsoft.com/licensing/terms/
+
+- [Azure Government](https://azure.microsoft.com/ko-kr/explore/global-infrastructure/government/national-security)
