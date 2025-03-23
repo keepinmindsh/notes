@@ -6,6 +6,10 @@
 
 Serving이란 머신러닝 모델을 실제 운영 환경(production)에서 사용할 수 있도록 배포하는 작업을 의미한다. 이는 모델이 연구 및 개발 환경에서 성공적으로 학습된 이후, 실제 서비스에서 활용되도록 하는 과정이다
 
+## 소버린 랜딩존 구축하기 가이드 
+
+- [소버링 랜딩존 구축하기 가이드](https://github.com/Azure/sovereign-landing-zone/blob/main/docs/01-Overview.md)
+
 ##  소버린 랜딩 존
 
 - https://github.com/Azure/sovereign-landing-zone/blob/main/docs/02-Architecture.md
