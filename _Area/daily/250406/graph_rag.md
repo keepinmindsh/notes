@@ -9,27 +9,27 @@ GraphRAG 는 **"그래프 기반의 정보 관계 모델링"**을 더한 것입�
 
 # Flow 
 
-📄 Raw Documents
-↓
-📦 1. 정보 추출 (Entity + 관계 추출)
-↓
-🕸️ 2. Knowledge Graph 구성 (예: NetworkX, Neo4j)
-↓
-🔍 3. Graph-based Retriever (유사 노드/경로 탐색)
-↓
-🧠 4. LLM + Prompt Template (질의 기반 응답 생성)
-↓
-🤖 5. GraphRAG 파이프라인
+📄 Raw Documents  
+↓  
+📦 1. 정보 추출 (Entity + 관계 추출)  
+↓  
+🕸️ 2. Knowledge Graph 구성 (예: NetworkX, Neo4j)  
+↓  
+🔍 3. Graph-based Retriever (유사 노드/경로 탐색)  
+↓  
+🧠 4. LLM + Prompt Template (질의 기반 응답 생성)  
+↓  
+🤖 5. GraphRAG 파이프라인  
 
 ## Graph 구축 
 
-📄 Raw Documents
-↓
-🧠 Named Entity Recognition (NER)
-↓
-🔁 Entity Resolution & Alignment  ← 💡 지금 여기!
-↓
-📊 Graph 구축
+📄 Raw Documents  
+↓  
+🧠 Named Entity Recognition (NER)  
+↓  
+🔁 Entity Resolution & Alignment  ← 💡 지금 여기!  
+↓  
+📊 Graph 구축  
 
 
 ## 관계가 중요한 문서 
