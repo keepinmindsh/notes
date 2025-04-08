@@ -321,6 +321,7 @@ The `role` can be one of the following:
     }
   ]
 }
+```
 
 # Assistant: Prefill
 
