@@ -14,6 +14,12 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED BY 'securepassword' WITH G
 FLUSH PRIVILEGES;
 ```
 
+# 유저 생성 
+
+```sql
+CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
+```
+
 
 # 특정 DB Schema에 대해서 권한 부여하기 
 
