@@ -26,3 +26,11 @@ CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
 ```sql
 GRANT ALL PRIVILEGES ON {db_schema 명}.* TO '{db_user}'@'%'  WITH GRANT OPTION
 ```
+
+# 사용예시 
+
+```sql
+CREATE USER 'sample'@'%' IDENTIFIED BY 'Sample12!@';
+GRANT ALL PRIVILEGES ON sample_test.* TO 'sample'@'%' IDENTIFIED BY 'Sample12!@' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
