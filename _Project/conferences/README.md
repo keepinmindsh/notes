@@ -37,7 +37,7 @@
   - AI를 활용한 보안 이벤트 분석 
   - Golden Image 기반  
   - TLS 1.3 
-  - API E2E ㅇㅁ호화 
+  - API E2E 암호화 
 - 어플리케이션 개편 
   - 로직 중심 어플리케이션 
 - Private Cloud + Public Cloud 
