@@ -45,6 +45,8 @@ if __name__ == "__main__":
 - The ability to perform multiple tasks at the sample time
   - usually use for CPU Bound 
 
+## Code Sample 
+
 ```python
 import os 
 import threading 
@@ -80,4 +82,6 @@ if __name__ == "__main__":
   - 병렬성이 발생할 때는 2명이 업무를 동시에 처리하기 때문에 다른 추가 업무에 대한 처리 완료시간이 빨라진다. 
   - 병렬성은 동시성에 의해서 한 사람이 각각 다른 사람에거 업무를 하달했을때 각각의 사람이 처리하는 업무는 병렬적으로 처리하게 된다. 
 
+# References 
 
+> https://techblog-history-younghunjo1.tistory.com/570#google_vignette 
