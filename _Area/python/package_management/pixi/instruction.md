@@ -1,0 +1,2 @@
+- https://pixi.sh/dev/advanced/pixi_shell/
+- https://alive-wong.tistory.com/90 
